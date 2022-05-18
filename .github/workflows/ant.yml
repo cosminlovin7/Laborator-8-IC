@@ -24,7 +24,7 @@ jobs:
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
     - name: Download a Build Artifact
-      uses: actions/download-artifact@v3.0.0
+      uses: actions/upload-artifact@v3.0.0
       with:
         # Artifact name
         name: lab8.jar
