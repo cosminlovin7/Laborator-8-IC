@@ -29,4 +29,4 @@ jobs:
         # Artifact name
         name: lab8.jar
         # Destination path
-        path: dist/
+        path: dist/lab8.jar
