@@ -23,10 +23,15 @@ jobs:
         distribution: 'temurin'
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
-    - name: Download a Build Artifact
+    - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.0.0
       with:
         # Artifact name
         name: lab8.jar
         # Destination path
         path: dist/lab8.jar
+    - name: Upload javadoc
+      uses: actions/upload-artifact@v3.0.0
+      with:
+        name: index.html
+        path: javadoc/index.html
