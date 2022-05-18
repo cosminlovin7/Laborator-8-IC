@@ -27,6 +27,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           # Artifact name
-          name: # optional
+          name: lab8.jar
           # Destination path
-          path: # optional
+          path: dist/lab8.jar
