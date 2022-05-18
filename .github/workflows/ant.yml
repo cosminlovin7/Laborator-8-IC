@@ -35,5 +35,5 @@ jobs:
     - name: Upload javadoc
       uses: actions/upload-artifact@v3.0.0
       with:
-        name: index.html
-        path: javadoc/index.html
+        name: javadoc
+        path: javadoc/
