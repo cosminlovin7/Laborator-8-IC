@@ -29,4 +29,4 @@ jobs:
           # Artifact name
           name: lab8.jar
           # Destination path
-          path: /home/runner/work/Laborator-8-IC/Laborator-8-IC/dist/
+          path: dist/
