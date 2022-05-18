@@ -31,12 +31,8 @@
         </jar>
     </target>
 
-    <target name="run" depends="dist">
-        <java jar="${dist}/${ant.project.name}.jar" fork="true"  failonerror="true"/>
-    </target>
-
     <target name="javadoc" depends="compile"
-             description="generate javadoc">
+            description="generate javadoc">
         <javadoc destdir="javadoc">
             <fileset dir="src" >
                 <include name="*.java"/>
@@ -45,6 +41,10 @@
         <echo>
             javadoc written to file://${javadoc}/index.html
         </echo>
+    </target>
+
+    <target name="run" depends="dist">
+        <java jar="${dist}/${ant.project.name}.jar" fork="true"  failonerror="true"/>
     </target>
 
     <target name="clean"
