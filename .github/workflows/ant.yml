@@ -30,8 +30,10 @@ jobs:
         name: lab8.jar
         # Destination path
         path: dist/lab8.jar
+    - name: Generate javadoc
+      run: ant javadoc
     - name: Upload javadoc
       uses: actions/upload-artifact@v3.0.0
       with:
-        name: CircularLinkedList.html
-        path: javadoc/CircularLinkedList.html
+        name: index.html
+        path: javadoc/index.html
