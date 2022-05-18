@@ -61,7 +61,7 @@ public class CircularLinkedList {
      * holds the value we are looking for.
      * When the first node that holds the value is found, we delete it
      * and then exit the function.
-     * @param valueToDelete
+     * @param valueToDelete the value of the node that should be deleted
      */
     public void deleteNode(int valueToDelete) {
         Node currentNode = head;
